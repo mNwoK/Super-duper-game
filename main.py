@@ -1,5 +1,8 @@
-print("Привет, Паша!")
-def git():
-    print("asdfghjkl;'")
+from fastapi import FastAPI
 
-"asdfgbnmbivuvcoguchciucyvugchfcfhcoy"
+app = FastAPI()
+
+
+@app.get("/")
+async def root():
+    return {"УБЕЙТЕ": "МЕНЯ"}
